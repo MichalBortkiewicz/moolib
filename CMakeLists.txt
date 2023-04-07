@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.12 FATAL_ERROR)
 project(moolib)
 
 include_directories(/net/tscratch/people/plgmbortkiewicz/conda_envs/forget/include)
+include_directories(${CMAKE_CUDA_TOOLKIT_INCLUDE_DIRECTORIES}) 
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_FLAGS
